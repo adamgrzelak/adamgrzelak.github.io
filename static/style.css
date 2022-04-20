@@ -31,7 +31,7 @@ body {
 }
 
 .description-div {
-  margin: auto 26%;
+  margin: auto 28%;
 }
 
 .skill-div {
@@ -40,7 +40,7 @@ body {
 }
 
 .hobbies-div {
-  margin: auto 25%;
+  margin: auto 28%;
 }
 
 hr {
@@ -74,6 +74,10 @@ a {
 
 a:hover {
   color: #FDB827;
+}
+
+p {
+  text-align: justify;
 }
 
 .fa-solid {
@@ -124,6 +128,10 @@ a:hover {
   height: 2rem;
   /* opacity: 30%; */
   filter: contrast(25%);
+}
+
+.link-icon:hover {
+  filter: invert(89%) sepia(11%) saturate(6303%) hue-rotate(336deg) brightness(100%) contrast(99%);
 }
 
 .link-row {
