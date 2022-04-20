@@ -147,7 +147,7 @@ p {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   hr {
     margin: 9% 8%;
   }
