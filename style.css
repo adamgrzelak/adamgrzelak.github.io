@@ -10,29 +10,33 @@ body {
   margin-bottom: 4%;
 }
 
-.intro-div {
+.title-div {
+  height: 100%;
   margin: auto 8%;
+}
+
+.profile-pic {
+  margin: 6rem auto 4.5rem;
+  height: 10rem;
+  border-radius: 5rem;
+  box-shadow: 0 0.25rem 0.5rem #646ECB;
+}
+
+.profile-pic:hover {
+  box-shadow: 0 0.25rem 0.5rem #FDB827;
+}
+
+.summary-div {
+  margin: auto 30%;
 }
 
 .description-div {
   margin: auto 28%;
 }
 
-@media (max-width: 1200px) {
-  .title-div, .description-div {
-    margin: auto 15%;
-  }
-}
-
 .skill-div {
-  margin: 6% auto;
+  margin: 8% auto;
   text-align: justify;
-}
-
-.profile-pic {
-  margin: 7rem auto 3.5rem;
-  height: 10rem;
-  border-radius: 5rem;
 }
 
 hr {
@@ -42,7 +46,7 @@ hr {
 }
 
 h1 {
-  font-family: "Pacifico";
+  font-family: "Kalam";
   font-size: 6rem;
   line-height: 7.5rem;
   color: #21209C;
@@ -50,6 +54,10 @@ h1 {
 
 h2 {
   margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: 1rem;
 }
 
 .bold {
@@ -74,7 +82,7 @@ a:hover {
   color: #FDB827;
 }
 
-.image {
+.skill-image {
   float: left;
   height: 10rem;
 }
@@ -98,6 +106,22 @@ a:hover {
   font-family: "Roboto Mono"
 }
 
-.footer-icon {
-  height: 3rem;
+.link-icon {
+  margin: auto 2rem;
+  height: 2rem;
+  /* opacity: 30%; */
+  filter: contrast(25%);
+}
+
+.link-row {
+  margin: 3% auto;
+}
+
+@media (max-width: 1200px) {
+  .title-div, .description-div, .summary-div {
+    margin: auto 15%;
+  }
+  hr {
+    margin: 8% 8%;
+  }
 }
