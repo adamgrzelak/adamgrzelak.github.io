@@ -27,16 +27,20 @@ body {
 }
 
 .summary-div {
-  margin: auto 30%;
+  margin: auto 29%;
 }
 
 .description-div {
-  margin: auto 28%;
+  margin: auto 26%;
 }
 
 .skill-div {
   margin: 8% auto;
   text-align: justify;
+}
+
+.hobbies-div {
+  margin: auto 25%;
 }
 
 hr {
@@ -97,31 +101,58 @@ a:hover {
   margin-right: 1.5rem;
 }
 
+.hobbies-div p {
+  margin-bottom: 2rem;
+}
+
 .skill-div p {
   font-family: "Merriweather";
   line-height: 1.75rem;
+  font-size: 1rem;
 }
 
 .code {
   font-family: "Roboto Mono"
 }
 
+.hobby-icon {
+  height: 3rem;
+}
+
 .link-icon {
-  margin: auto 2rem;
+  margin: auto 3.5rem;
   height: 2rem;
   /* opacity: 30%; */
   filter: contrast(25%);
 }
 
 .link-row {
-  margin: 3% auto;
+  margin: 5% auto;
+}
+
+.footer-link {
+  font-size: 0.75rem;
 }
 
 @media (max-width: 1200px) {
-  .title-div, .description-div, .summary-div {
+  .title-div, .description-div, .summary-div, .hobbies-div {
     margin: auto 15%;
   }
+  .summary-div, .hobbies-div {
+    text-align: justify;
+  }
   hr {
-    margin: 8% 8%;
+    margin: 9% 8%;
+  }
+  .link-row {
+    margin: 7% auto;
+  }
+  .link-icon {
+    margin: auto 2.5rem;
   }
 }
+
+/*
+Palette
+https://colorhunt.co/palette/eae7edb793e6646ecb3532a7
+*/
