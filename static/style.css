@@ -152,24 +152,24 @@ p {
     margin: 9% 8%;
   }
   h2 {
-    font-size: calc(2rem + 1.5vw);
-    margin-bottom: 1.5rem;
+    font-size: calc(2.5rem + 1.5vw);
+    margin-bottom: 2rem;
   }
   h3 {
-    font-size: calc(2rem + 1.25vw);
+    font-size: calc(2.5rem + 1.25vw);
   }
   p {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
   }
   .skill-div p {
-    font-size: 1.75rem;
-    line-height: 3rem;
+    font-size: 2.25rem;
+    line-height: 3.5rem;
   }
   .skill-image {
     height: 15rem;
   }
   h5 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .link-row {
     margin: 7% auto;
@@ -179,12 +179,8 @@ p {
     margin: auto 2.5rem;
   }
   .footer-link {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
-}
-
-@media (max-width: 1200px) {
-
 }
 
 /*
