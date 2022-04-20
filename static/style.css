@@ -27,7 +27,7 @@ body {
 }
 
 .summary-div {
-  margin: auto 29%;
+  margin: auto 28.5%;
 }
 
 .description-div {
@@ -57,6 +57,10 @@ h1 {
 
 h2 {
   margin-bottom: 1rem;
+}
+
+h3 {
+  margin: 1rem auto;
 }
 
 h5 {
@@ -145,18 +149,26 @@ p {
   .title-div, .description-div, .summary-div, .hobbies-div {
     margin: auto 15%;
   }
+  .skill-div {
+    margin: 12% auto;
+  }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   hr {
     margin: 9% 8%;
   }
   h2 {
     font-size: calc(2.5rem + 1.5vw);
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
   h3 {
     font-size: calc(2.5rem + 1.25vw);
+    margin: 0.5rem auto 3.5rem;
+  }
+  .profile-pic {
+    height: 12rem;
+    border-radius: 6rem;
   }
   p {
     font-size: 2.25rem;
@@ -167,6 +179,15 @@ p {
   }
   .skill-image {
     height: 15rem;
+  }
+  .right {
+    margin-left: 2.5rem;
+  }
+  .left {
+    margin-right: 2.5rem;
+  }
+  .hobby-icon {
+    margin-top: 1.5rem;
   }
   h5 {
     font-size: 2rem;
