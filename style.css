@@ -15,12 +15,24 @@ body {
 }
 
 .description-div {
-  margin: auto 25%;
+  margin: auto 28%;
+}
+
+@media (max-width: 1200px) {
+  .title-div, .description-div {
+    margin: auto 15%;
+  }
 }
 
 .skill-div {
   margin: 6% auto;
   text-align: justify;
+}
+
+.profile-pic {
+  margin: 7rem auto 3.5rem;
+  height: 10rem;
+  border-radius: 5rem;
 }
 
 hr {
