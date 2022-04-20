@@ -36,7 +36,6 @@ body {
 
 .skill-div {
   margin: 8% auto;
-  text-align: justify;
 }
 
 .hobbies-div {
@@ -146,18 +145,46 @@ p {
   .title-div, .description-div, .summary-div, .hobbies-div {
     margin: auto 15%;
   }
-  .summary-div, .hobbies-div {
-    text-align: justify;
-  }
+}
+
+@media (max-width: 900px) {
   hr {
     margin: 9% 8%;
+  }
+  h2 {
+    font-size: calc(2rem + 1.5vw);
+    margin-bottom: 1.5rem;
+  }
+  h3 {
+    font-size: calc(2rem + 1.25vw);
+  }
+  p {
+    font-size: 1.75rem;
+  }
+  .skill-div p {
+    font-size: 1.75rem;
+    line-height: 3rem;
+  }
+  .skill-image {
+    height: 15rem;
+  }
+  h5 {
+    font-size: 1.5rem;
   }
   .link-row {
     margin: 7% auto;
   }
   .link-icon {
+    height: 3rem;
     margin: auto 2.5rem;
   }
+  .footer-link {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+
 }
 
 /*
