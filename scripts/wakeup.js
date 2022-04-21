@@ -1,4 +1,8 @@
+var isClicked = false;
+
 document.addEventListener("click", function(event) {
+
+  isClicked = true
 
   fetch("https://neurvid.herokuapp.com")
 
@@ -6,4 +10,4 @@ document.addEventListener("click", function(event) {
 
   fetch("https://freq-report.herokuapp.com/?name=A&lower=20&upper=15000")
 
-})
+});
