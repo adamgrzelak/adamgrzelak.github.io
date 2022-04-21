@@ -5,6 +5,10 @@ body {
   font-family: "Open Sans"
 }
 
+::selection {
+  background-color: #c0c0f2;
+}
+
 .main-div {
   margin-top: 4%;
   margin-bottom: 4%;
@@ -19,7 +23,7 @@ body {
   margin: 6rem auto 4.5rem;
   height: 10rem;
   border-radius: 5rem;
-  box-shadow: 0 0.25rem 0.5rem #646ECB;
+  box-shadow: 0 0.25rem 0.5rem #21209C;
 }
 
 .profile-pic:hover {
@@ -44,7 +48,7 @@ body {
 
 hr {
   margin: 4% 8%;
-  border-top: 5px solid #3532A7;
+  border-top: 5px solid #21209C;
   border-radius: 5px;
 }
 
@@ -71,8 +75,9 @@ h5 {
   font-weight: 700;
 }
 
-a {
+a, a:active {
   color: #21209C;
+  text-decoration: none;
 }
 
 a:hover {
@@ -206,5 +211,5 @@ p {
 
 /*
 Palette
-https://colorhunt.co/palette/eae7edb793e6646ecb3532a7
+https://colorhunt.co/palette/226633
 */
