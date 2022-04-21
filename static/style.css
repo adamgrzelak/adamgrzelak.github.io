@@ -207,7 +207,7 @@ p {
   }
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .profile-pic:hover {
     box-shadow: 0 0.25rem 0.5rem #FDB827;
   }
