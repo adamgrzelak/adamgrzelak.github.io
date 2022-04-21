@@ -26,6 +26,10 @@ body {
   box-shadow: 0 0.25rem 0.5rem #21209C;
 }
 
+.profile-pic:hover {
+  box-shadow: 0 0.25rem 0.5rem #FDB827;
+}
+
 .summary-div {
   margin: auto 28%;
 }
@@ -76,6 +80,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #FDB827;
+}
+
 p {
   text-align: justify;
 }
@@ -84,6 +92,10 @@ p {
   font-size: 5rem;
   margin: 4% 0;
   color: #21209C;
+}
+
+.fa-solid:hover {
+  color: #FDB827;
 }
 
 .skill-image {
@@ -124,6 +136,10 @@ p {
   height: 2rem;
   /* opacity: 30%; */
   filter: contrast(25%);
+}
+
+.link-icon:hover {
+  filter: invert(89%) sepia(11%) saturate(6303%) hue-rotate(336deg) brightness(100%) contrast(99%);
 }
 
 .link-row {
@@ -204,20 +220,6 @@ p {
 
   .footer-link {
     font-size: 1.25rem;
-  }
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .profile-pic:hover {
-    box-shadow: 0 0.25rem 0.5rem #FDB827;
-  }
-
-  a:hover, .fa-solid:hover {
-    color: #FDB827;
-  }
-
-  .link-icon:hover {
-    filter: invert(89%) sepia(11%) saturate(6303%) hue-rotate(336deg) brightness(100%) contrast(99%);
   }
 }
 
