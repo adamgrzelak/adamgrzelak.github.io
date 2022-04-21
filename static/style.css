@@ -26,10 +26,6 @@ body {
   box-shadow: 0 0.25rem 0.5rem #21209C;
 }
 
-.profile-pic:hover {
-  box-shadow: 0 0.25rem 0.5rem #FDB827;
-}
-
 .summary-div {
   margin: auto 28%;
 }
@@ -75,13 +71,9 @@ h5 {
   font-weight: 700;
 }
 
-a, a:active {
+a {
   color: #21209C;
   text-decoration: none;
-}
-
-a:hover {
-  color: #FDB827;
 }
 
 p {
@@ -92,10 +84,6 @@ p {
   font-size: 5rem;
   margin: 4% 0;
   color: #21209C;
-}
-
-.fa-solid:hover {
-  color: #FDB827;
 }
 
 .skill-image {
@@ -138,10 +126,6 @@ p {
   filter: contrast(25%);
 }
 
-.link-icon:hover {
-  filter: invert(89%) sepia(11%) saturate(6303%) hue-rotate(336deg) brightness(100%) contrast(99%);
-}
-
 .link-row {
   margin: 5% auto;
 }
@@ -154,6 +138,7 @@ p {
   .title-div, .description-div, .summary-div, .hobbies-div {
     margin: auto 10%;
   }
+
   .skill-div {
     margin: 12% auto;
   }
@@ -163,49 +148,76 @@ p {
   hr {
     margin: 9% 8%;
   }
+
   h2 {
     font-size: calc(2.5rem + 1.5vw);
     margin-bottom: 2.5rem;
   }
+
   h3 {
     font-size: calc(2.5rem + 1.25vw);
     margin: 0.5rem auto 3.5rem;
   }
+
   .profile-pic {
     height: 12rem;
     border-radius: 6rem;
   }
+
   p {
     font-size: 2.25rem;
   }
+
   .skill-div p {
     font-size: 2.25rem;
     line-height: 3.5rem;
   }
+
   .skill-image {
     height: 15rem;
   }
+
   .right {
     margin-left: 2.5rem;
   }
+
   .left {
     margin-right: 2.5rem;
   }
+
   .hobby-icon {
     margin-top: 1.5rem;
   }
+
   h5 {
     font-size: 2rem;
   }
+
   .link-row {
     margin: 7% auto;
   }
+
   .link-icon {
     height: 3rem;
     margin: auto 2.5rem;
   }
+
   .footer-link {
     font-size: 1.25rem;
+  }
+}
+
+@media (hover: hover) {
+  .profile-pic:hover {
+    box-shadow: 0 0.25rem 0.5rem #FDB827;
+  }
+
+  a:hover, .fa-solid:hover {
+    color: #FDB827;
+  }
+
+  .link-icon:hover {
+    filter: invert(89%) sepia(11%) saturate(6303%) hue-rotate(336deg) brightness(100%) contrast(99%);
   }
 }
 
