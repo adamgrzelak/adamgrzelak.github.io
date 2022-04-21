@@ -27,7 +27,7 @@ body {
 }
 
 .summary-div {
-  margin: auto 28.5%;
+  margin: auto 28%;
 }
 
 .description-div {
@@ -147,7 +147,7 @@ p {
 
 @media (max-width: 1200px) {
   .title-div, .description-div, .summary-div, .hobbies-div {
-    margin: auto 15%;
+    margin: auto 10%;
   }
   .skill-div {
     margin: 12% auto;
