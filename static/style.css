@@ -60,7 +60,7 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 h3 {
@@ -220,6 +220,10 @@ p {
 
   .footer-link {
     font-size: 1.25rem;
+  }
+
+  .link-icon {
+    margin: auto 4rem;
   }
 }
 
