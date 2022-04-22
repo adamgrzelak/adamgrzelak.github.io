@@ -1,4 +1,4 @@
-var isClicked = false;
+let isClicked = false;
 
 document.addEventListener("click", function(event) {
 
