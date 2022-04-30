@@ -15,3 +15,10 @@ document.addEventListener("click", function(event) {
   isClicked = true
 
 });
+
+let date = new Date();
+let year = date.getFullYear();
+let month = date.getMonth();
+let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+document.getElementById("date").innerHTML = months[month] + " " + year;
