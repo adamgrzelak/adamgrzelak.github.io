@@ -22,4 +22,4 @@ let month = date.getMonth();
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
 document.getElementById("date").innerHTML = months[month] + " " + year;
-document.getElementByTagName("h5").innerHTML = "© " + year + " Adam Grzelak";
+document.getElementsByTagName("h5")[0].innerHTML = "© " + year + " Adam Grzelak";
