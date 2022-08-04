@@ -67,6 +67,10 @@ h3 {
   margin: 1rem auto;
 }
 
+h4 {
+  font-size: 1.25rem;
+}
+
 h5 {
   font-size: 1rem;
 }
@@ -150,6 +154,37 @@ p {
   font-size: 0.75rem;
 }
 
+.consent {
+  background-color: #F1F1F1;
+  position: fixed;
+  text-align: center;
+  padding: 2% 5%;
+  margin: 0 auto;
+  bottom: 2%;
+  left: 1%;
+  right: 1%;
+  width: 85%;
+  z-index: 1;
+  border-radius: 2.5% / 15%;
+  border: solid #21209C;
+}
+
+.consent-button {
+  background-color: #21209C;
+  color: #F1F1F1;
+  border-radius: 5%;
+  border: none;
+  width: 6rem;
+  height: 3rem;
+  font-size: 1.25rem;
+  margin: 1rem 1rem 0;
+}
+
+.consent-button:hover {
+  background-color: #FDB827;
+  color: #23120B
+}
+
 @media (max-width: 1200px) {
   .title-div, .description-div, .summary-div, .hobbies-div {
     margin: auto 10%;
@@ -158,6 +193,12 @@ p {
   .skill-div {
     margin: 12% auto;
   }
+
+  .consent {
+    border-radius: 2.5% / 12.5%;
+    padding: 3% 7.5%;
+  }
+
 }
 
 @media (max-width: 1000px) {
@@ -173,6 +214,14 @@ p {
   h3 {
     font-size: calc(2.5rem + 1.25vw);
     margin: 0.5rem auto 3.5rem;
+  }
+
+  h4 {
+    font-size: calc(1.25rem + 1.25vw)
+  }
+
+  .consent-button {
+    font-size: calc(1rem + 1.25vw)
   }
 
   .profile-pic {
@@ -224,6 +273,11 @@ p {
 
   .link-icon {
     margin: auto 4rem;
+  }
+
+  .consent {
+    border-radius: 3% / 7.5%;
+    padding: 5% 7.5%;
   }
 }
 
