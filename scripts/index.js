@@ -51,6 +51,7 @@ document.addEventListener("click", function(event) {
     $.get("https://freqexam.herokuapp.com")
     $.get("https://freq-report.herokuapp.com/?name=A&lower=20&upper=15000")
     $.get("https://papaclock.herokuapp.com/")
+    $.get("https://agstats.herokuapp.com/")
   }
   isClicked = true
 
