@@ -68,7 +68,6 @@ document.addEventListener("click", function(event) {
   if (!isClicked) {
     $.get("https://neurvid.herokuapp.com")
     $.get("https://freqexam.herokuapp.com")
-    $.get("https://freq-report.herokuapp.com/?name=A&lower=20&upper=15000")
     $.get("https://papaclock.herokuapp.com/")
     $.get("https://agstats.herokuapp.com/")
   }
