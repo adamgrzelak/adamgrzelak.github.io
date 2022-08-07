@@ -68,15 +68,7 @@ $(document).on("click", function(event) {
   function pingWebsite(address) {
     $.ajax({
       url: address,
-      type: "HEAD",
-      success: function(result) {
-        console.log(result);
-        alert("Success!")
-      },
-      error: function(result) {
-        console.log(result);
-        alert("Error!")
-      }
+      type: "HEAD"
     })
   }
 
