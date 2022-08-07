@@ -1,16 +1,16 @@
 // Collecting anonymous user data.
 function sendInfoLocale(activity) {
-  $.post("https://agstats.herokuapp.com/" + activity, {
-    message: activity,
-    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
-  });
+  // $.post("https://agstats.herokuapp.com/" + activity, {
+  //   message: activity,
+  //   timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
+  // });
 }
 
 function sendInfoEmpty(activity) {
-  $.post("https://agstats.herokuapp.com/" + activity, {
-    message: activity,
-    timezone: null
-  });
+  // $.post("https://agstats.herokuapp.com/" + activity, {
+  //   message: activity,
+  //   timezone: null
+  // });
 }
 
 const startTime = performance.now()
@@ -63,13 +63,28 @@ $(window).scroll(function() {
 // Pinging of my other websites to enable their faster loading
 let isClicked = false;
 
-document.addEventListener("click", function(event) {
+$(document).on("click", function(event) {
+
+  function pingWebsite(address) {
+    $.ajax({
+      url: address,
+      type: "HEAD",
+      success: function(result) {
+        console.log(result);
+        alert("Success!")
+      },
+      error: function(result) {
+        console.log(result);
+        alert("Error!")
+      }
+    })
+  }
 
   if (!isClicked) {
-    $.get("https://neurvid.herokuapp.com")
-    $.get("https://freqexam.herokuapp.com")
-    $.get("https://papaclock.herokuapp.com/")
-    $.get("https://agstats.herokuapp.com/")
+    pingWebsite("https://neurvid.herokuapp.com")
+    pingWebsite("https://freqexam.herokuapp.com")
+    pingWebsite("https://papaclock.herokuapp.com/")
+    pingWebsite("https://agstats.herokuapp.com/")
   }
   isClicked = true
 
@@ -83,5 +98,5 @@ let year = date.getFullYear();
 let month = date.getMonth();
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
-document.getElementById("date").innerHTML = months[month] + " " + year;
-document.getElementsByTagName("h5")[0].innerHTML = "© " + year + " Adam Grzelak";
+$("#date")[0].innerHTML = months[month] + " " + year;
+$("h5")[0].innerHTML = "© " + year + " Adam Grzelak";
