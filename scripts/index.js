@@ -1,16 +1,16 @@
 // Collecting anonymous user data.
 function sendInfoLocale(activity) {
-  // $.post("https://agstats.herokuapp.com/" + activity, {
-  //   message: activity,
-  //   timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
-  // });
+  $.post("https://agstats.herokuapp.com/" + activity, {
+    message: activity,
+    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
+  });
 }
 
 function sendInfoEmpty(activity) {
-  // $.post("https://agstats.herokuapp.com/" + activity, {
-  //   message: activity,
-  //   timezone: null
-  // });
+  $.post("https://agstats.herokuapp.com/" + activity, {
+    message: activity,
+    timezone: null
+  });
 }
 
 const startTime = performance.now()
