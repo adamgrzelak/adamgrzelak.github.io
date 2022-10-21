@@ -90,5 +90,6 @@ let year = date.getFullYear();
 let month = date.getMonth();
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
-$("#date")[0].innerHTML = months[month] + " " + year;
+$("#dateA")[0].innerHTML = months[month] + " " + year;
+$("#dateB")[0].innerHTML = months[month] + " " + year;
 $("h5")[0].innerHTML = "© " + year + " Adam Grzelak";
